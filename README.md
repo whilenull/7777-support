@@ -143,6 +143,8 @@ Then, each time 7777 runs and the connection is active, the following AWS resour
 
 - Fargate container (cost: ~$0.01/hour)
 
+You can easily review all those resources as they are grouped in a single CloudFormation stack: [search for `port7777` in the AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home#/stacks?filteringText=port7777&filteringStatus=active&viewNested=true&hideStacks=false).
+
 ## Uninstall
 
 To remove everything that 7777 has set up in your AWS account, run:
@@ -150,5 +152,7 @@ To remove everything that 7777 has set up in your AWS account, run:
 ```bash
 7777 uninstall
 ```
+
+You can also delete everything manually by deleting the `port7777` CloudFormation stack in the AWS console. To find it, [open the CloudFormation console and search for port7777](https://console.aws.amazon.com/cloudformation/home#/stacks?filteringText=port7777&filteringStatus=active&viewNested=true&hideStacks=false) (make sure to select the correct region), then delete it.
 
 Note: your databases will _not_ be deleted. Only what 7777 used to create the tunnel is deleted. Just to be clear one last time: your database is safe.
