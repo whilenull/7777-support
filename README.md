@@ -11,29 +11,29 @@ Welcome to the documentation of [7777](https://port7777.com/).
 Download and install the Linux binary in `/usr/local/bin`:
 
 ```bash
-wget -q https://releases.port7777.com/0.1.8/linux/7777
+wget -q https://releases.port7777.com/latest/linux/7777
 chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
 
-A Linux Alpine version is available under the https://releases.port7777.com/0.1.8/alpine/7777 URL.
+A Linux Alpine version is available under the https://releases.port7777.com/latest/alpine/7777 URL.
 
 ### MacOS
 
 Download and install the MacOS binary in `/usr/local/bin`:
 
 ```bash
-wget -q https://releases.port7777.com/0.1.8/macos/7777
+wget -q https://releases.port7777.com/latest/macos/7777
 chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
 
 ### Windows
 
-Download the Windows 10 binary directly from https://releases.port7777.com/0.1.8/windows/7777.exe or via the command line:
+Download the Windows 10 binary directly from https://releases.port7777.com/latest/windows/7777.exe or via the command line:
 
 ```bash
-curl.exe -o 7777.exe https://releases.port7777.com/0.1.8/windows/7777.exe
+curl.exe -o 7777.exe https://releases.port7777.com/latest/windows/7777.exe
 ```
 
 Then run the `7777.exe` program.
