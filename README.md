@@ -56,6 +56,12 @@ To connect to a database in your AWS account, 7777 requires AWS permissions.
 
 By default, 7777 behaves like [the official `aws` CLI](https://aws.amazon.com/cli/) and picks up any AWS account configured on your machine in the  `~/.aws/credentials` file. That means that if you use the AWS CLI, 7777 should work out of the box.
 
+If you want to use a specific AWS profile, set the `AWS_PROFILE` variable. For example:
+
+```bash
+AWS_PROFILE=my-profile 7777
+```
+
 If you prefer, you also can provide AWS access keys explicitly via the following environment variables:
 
 - `AWS_ACCESS_KEY_ID`
