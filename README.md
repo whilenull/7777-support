@@ -40,7 +40,9 @@ Then run the `7777.exe` program.
 
 ## License
 
-7777 requires a valid license to run. To set it up, run:
+**While in beta 7777 does not require a license. You can skip this section.***
+
+~~7777 requires a valid license to run. To set it up, run:~~
 
 ```bash
 7777 license YOUR_LICENSE
