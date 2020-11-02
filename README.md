@@ -2,7 +2,7 @@
 
 Welcome to the documentation of [7777](https://port7777.com/).
 
-## Installation
+## Installation and update
 
 7777 is bundled as a self-contained binary.
 
@@ -40,7 +40,7 @@ Then run the `7777.exe` program.
 
 ## License
 
-**While in beta 7777 does not require a license. You can skip this section.***
+**While in beta 7777 does not require a license. You can skip this section.**
 
 ~~7777 requires a valid license to run. To set it up, run:~~
 
