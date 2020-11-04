@@ -75,9 +75,11 @@ To use 7777 to connect to an AWS RDS database, simply run `7777`:
 
 ```bash
 7777
+# Use the --verbose flag to show more details
+7777 --verbose
+# Use the --region option to force a specific region
+7777 --region=us-east-1
 ```
-
-7777 will use the default region configured in `~/.aws/config`. If you want to use a different region, use the `7777 --region=...` option.
 
 The first time, 7777 will setup the strict minimum it requires to run in your AWS account (the list is detailed below).
 
