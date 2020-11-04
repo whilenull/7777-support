@@ -23,7 +23,7 @@ A Linux Alpine version is available under the https://releases.port7777.com/late
 Download and install the MacOS binary in `/usr/local/bin`:
 
 ```bash
-wget -q https://releases.port7777.com/latest/macos/7777
+curl -o 7777 https://releases.port7777.com/latest/macos/7777
 chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
