@@ -69,6 +69,8 @@ If you prefer, you also can provide AWS access keys explicitly via the following
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 
+You can find [the list of IAM permissions here](AWS-permissions.md) if you create access keys specific to 7777.
+
 ## Usage
 
 To use 7777 to connect to an AWS RDS database, simply run `7777`:
