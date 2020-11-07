@@ -32,6 +32,7 @@ Here are the IAM permissions that 7777 requires to run correctly:
                 "ec2:DescribeNetworkInterfaces",
                 "ec2:createTags",
                 "ecs:DescribeClusters",
+                "ecs:ListTasks",
                 "ecs:CreateCluster",
                 "ecs:DeleteCluster",
                 "ecs:DescribeTasks",
