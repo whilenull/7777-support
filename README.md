@@ -105,11 +105,7 @@ mysql --user=admin --password=XXX --host=127.0.0.1 --port=7777
 
 ### Options
 
-#### Port
-
-The port (on your computer) can be customized via the `7777 --port=7778` option.
-
-The port of the remote database is automatically discovered (for example 3306 for MySQL).
+A list of all commands and options is [available here](https://github.com/whilenull/7777-support/blob/main/commands.md).
 
 #### Region
 
