@@ -40,17 +40,15 @@ Then run the `7777.exe` program.
 
 ## License
 
-**While in beta 7777 does not require a license. You can skip this section.**
-
-~~7777 requires a valid license to run. To set it up, run:~~
+7777 requires a valid license to run. To set it up, run:
 
 ```bash
-7777 license YOUR_LICENSE
+7777 configure YOUR_LICENSE
 ```
 
-Replace `YOUR_LICENSE` with the license generated for you after your purchase on [port7777.com](https://port7777.com/). This command will store your license in a `~/.7777/license` file on your machine.
+Replace `YOUR_LICENSE` with the license sent to you after your purchase on [port7777.com](https://port7777.com/) (you will receive it by email). This command will store your license in a `~/.7777/license` file on your machine.
 
-If you prefer, you can also set your license in a `7777_LICENSE` environment variable.
+If you prefer, you can also set your license in a `PORT_7777_LICENSE` environment variable.
 
 ## AWS access keys
 
