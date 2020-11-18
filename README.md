@@ -2,6 +2,8 @@ Welcome to the documentation of [7777](https://port7777.com/).
 
 This repository is also the place to ask for support about 7777: [**open a new GitHub issue**](https://github.com/whilenull/7777-support/issues/new) and detail your problem.
 
+If you need to discuss a problem with a purchase or a license, contact us privately (our email address can be found in the footer of [port7777.com](https://port7777.com/)).
+
 ## Installation and update
 
 7777 is bundled as a self-contained binary.
