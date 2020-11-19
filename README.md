@@ -38,7 +38,7 @@ Download the Windows 10 binary directly from https://releases.port7777.com/lates
 curl.exe -o 7777.exe https://releases.port7777.com/latest/windows/7777.exe
 ```
 
-Then run the `7777.exe` program.
+Then run the `7777.exe` program, for example using [Git Bash](https://gitforwindows.org/).
 
 ## License
 
