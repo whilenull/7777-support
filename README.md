@@ -166,3 +166,12 @@ To remove everything that 7777 has set up in your AWS account, run:
 You can also delete everything manually by deleting the `port7777` CloudFormation stack in the AWS console. To find it, [open the CloudFormation console and search for port7777](https://console.aws.amazon.com/cloudformation/home#/stacks?filteringText=port7777&filteringStatus=active&viewNested=true&hideStacks=false) (make sure to select the correct region), then delete it.
 
 Note: your databases will _not_ be deleted. Only what 7777 used to create the tunnel is deleted. Just to be clear one last time: your database is safe.
+
+## Troubleshooting
+
+> Conflicts with other tools deleting changes made by 7777.
+
+Some tools, like Terraform, can sometimes overwrite changes made by 7777. For example, they could remove from your database the security group that 7777 adds.
+In case that happens, this is very hard to detect and fix these issues because 7777 uses CloudFormation, which itself does not fix changes made externally to the CloudFormation stack.
+
+One workaround is to run `7777 uninstall` and `7777` again.
