@@ -52,6 +52,13 @@ Prints informative messages about what 7777 is doing. Helpful for debugging.
 
 `7777 --verbose`
 
+##### --skip-install
+
+Skip 7777 installation. Useful for projects that want to provision and
+manage 7777 infrastructure manually.
+
+`7777 --skip-install`
+
 --------------------
 
 ### 7777 list
