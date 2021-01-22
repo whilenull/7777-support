@@ -1,4 +1,4 @@
-Here are the IAM permissions that 7777 requires to run correctly:
+Here are the IAM permissions that 7777 requires to run it correctly:
 
 ```json
 {
@@ -52,3 +52,6 @@ Here are the IAM permissions that 7777 requires to run correctly:
     ]
 }
 ```
+
+For a more restrictive permission setup, check out the  
+[Manual Installation process (Support Limited)](https://github.com/whilenull/7777-support/blob/main/AWS-manual-installation.md)
