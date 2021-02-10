@@ -111,6 +111,55 @@ A list of all commands and options is [available here](https://github.com/whilen
 
 The AWS region can be customized via the `7777 --region=us-east-1` option.
 
+## CI/CD
+
+It is possible to use 7777 in CI/CD, for example to run code against the database.
+
+In that case, running 7777 via Docker is simpler as it avoids downloading the `7777` binary on every run.
+
+Note: running 7777 in CI requires a "Team" license because 7777 will run on a different machine every time.
+
+Here is an example:
+
+```bash
+docker run --rm -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e PORT_7777_LICENSE -p 7777:7777 port7777/7777:1
+```
+
+Define `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` and `PORT_7777_LICENSE` as secret environment variables in your CI system.
+
+One common need in CI is to wait for the tunnel to be opened before continuing. Here is an example:
+
+```bash
+docker run --rm -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e PORT_7777_LICENSE -p 7777:7777 port7777/7777:1 --region=$AWS_REGION --database=$DATABASE_NAME --ttl=1 --verbose &
+# Wait until the tunnel is ready
+while ! nc -z localhost 7777; do sleep 1; done;
+# Now the tunnel is open, connect to `localhost:7777`
+# ...
+```
+
+As you can see above, by setting `AWS_REGION` and `DATABASE_NAME` we can pre-select the database we want to use. And we run `7777` in background using `&`, waiting until it is connected using `netcat`.
+
+**Warning**: on GitLab the Docker container is not accessible as `localhost`. It is accessible as `docker` instead. Here is a more complete example:
+
+```yaml
+variables:
+  AWS_REGION: us-east-1
+  DATABASE_NAME: my-rds-db-name
+  DB_HOST: 'docker:7777'
+
+build:
+  image: docker:19.03.12
+  services:
+    - docker:19.03.12-dind
+  script:
+    # Open a tunnel to the RDS database in background using 7777
+    - docker run --rm -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e PORT_7777_LICENSE -p 7777:7777 port7777/7777:1 --region=$AWS_REGION --database=$DATABASE_NAME --ttl=1 --verbose &
+    # Wait until the tunnel is ready
+    - while ! nc -z docker 7777; do sleep 1; done;
+    # Now we can run our code:
+    - ...
+```
+
 ### How it works
 
 7777 lets you connect to a remote database running in the cloud via a port on your machine. This is possible through something called **an SSH tunnel**.
