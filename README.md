@@ -20,6 +20,8 @@ sudo mv 7777 /usr/local/bin
 
 A Linux Alpine version is available under the https://releases.port7777.com/latest/alpine/7777 URL.
 
+*Note: Due to [a limitation in `pkg`](https://github.com/vercel/pkg/issues/726), running `apk add libstdc++ libgcc` is required with Linux Alpine.*
+
 ### MacOS
 
 Download and install the MacOS binary in `/usr/local/bin`:
