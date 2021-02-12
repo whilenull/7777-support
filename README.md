@@ -113,6 +113,12 @@ A list of all commands and options is [available here](https://github.com/whilen
 
 The AWS region can be customized via the `7777 --region=us-east-1` option.
 
+## Running in Docker and CI/CD
+
+It is possible to run 7777 in Docker, as well as use it in CI/CD.
+
+See the [**CI/CD documentation**](CI-CD.md).
+
 ### How it works
 
 7777 lets you connect to a remote database running in the cloud via a port on your machine. This is possible through something called **an SSH tunnel**.
