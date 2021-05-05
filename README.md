@@ -18,6 +18,8 @@ chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
 
+*Note: we've had one report that Bitdefender on Ubuntu was deleting the `7777` executable. If that happens to you, please let us know. You can add 7777 to Bitdefender's exclusion list.*
+
 A Linux Alpine version is available under the https://releases.port7777.com/latest/alpine/7777 URL.
 
 *Note: Due to [a limitation in `pkg`](https://github.com/vercel/pkg/issues/726), running `apk add libstdc++ libgcc` is required with Linux Alpine.*
