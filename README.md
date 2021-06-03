@@ -185,3 +185,9 @@ Some tools, like Terraform, can sometimes overwrite changes made by 7777. For ex
 In case that happens, this is very hard to detect and fix these issues because 7777 uses CloudFormation, which itself does not fix changes made externally to the CloudFormation stack.
 
 One workaround is to run `7777 uninstall` and `7777` again.
+
+> Error: There is no subnet routing to the internet in availability zone us-east-1a of VPC vpc-xxxxx.
+
+This error can happen for applications that use the default VPC provided in the region. Those default VPCs are unfortunately not explicitely associated with the Route Table.
+
+Not sure what that means or what to do? Please have a look [at this answer](https://github.com/whilenull/7777-support/issues/5#issuecomment-733593007), it should help. Get in touch if you have any issue.
