@@ -34,6 +34,8 @@ chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
 
+7777 is also available via Brew: `brew cask install 7777`
+
 ### Windows
 
 Download the Windows 10 binary directly from https://releases.port7777.com/latest/windows/7777.exe or via the command line:
