@@ -34,7 +34,7 @@ chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
 
-7777 is also available via Brew: `brew cask install 7777`
+7777 is also available via Brew: `brew install 7777`
 
 ### Windows
 
