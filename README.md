@@ -117,6 +117,13 @@ A list of all commands and options is [available here](https://github.com/whilen
 
 The AWS region can be customized via the `7777 --region=us-east-1` option.
 
+## Elasticache support
+
+Starting on 1.1.0, 7777 will now support Elasticache for Redis.
+In order to establish a connection to your Redis Cluster, a new
+parameter `--elasticache` has been added. Furthermore, the permissions
+required by 7777 will also increase.
+
 ## Running in Docker and CI/CD
 
 It is possible to run 7777 in Docker, as well as use it in CI/CD.
