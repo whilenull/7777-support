@@ -59,6 +59,12 @@ manage 7777 infrastructure manually.
 
 `7777 --skip-install`
 
+##### --elasticache
+
+Instructs 7777 to establish connection with AWS Elasticache for Redis instead of AWS RDS.
+
+`7777 --elasticache`
+
 --------------------
 
 ### 7777 list
