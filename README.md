@@ -121,8 +121,13 @@ The AWS region can be customized via the `7777 --region=us-east-1` option.
 
 Starting on 1.1.0, 7777 will now support Elasticache for Redis.
 In order to establish a connection to your Redis Cluster, a new
-parameter `--elasticache` has been added. Furthermore, the permissions
-required by 7777 will also increase.
+parameter `--elasticache` has been added. Make sure you have (permission to list Elasticache instances)[https://github.com/whilenull/7777-support/blob/main/AWS-permissions.md#upgrading-from-10].
+
+After the tunnel is established you may connect to your Redis cluster using any tool you like on your local port 7777
+
+```bash
+redis-cli -p 7777
+```
 
 ## Running in Docker and CI/CD
 
