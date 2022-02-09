@@ -36,6 +36,15 @@ sudo mv 7777 /usr/local/bin
 
 7777 is also available via Brew: `brew install 7777`
 
+If you have any macOS permission issues (the binary isn't approved by Apple), you can whitelist it manually in system preferences or via the CLI:
+
+```bash
+spctl --add /usr/local/bin/7777
+
+# Approval can be later removed via
+spctl --remove /usr/local/bin/7777
+```
+
 ### Windows
 
 Download the Windows 10 binary directly from https://releases.port7777.com/latest/windows/7777.exe or via the command line:
