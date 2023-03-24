@@ -17,6 +17,7 @@ Here are the IAM permissions that 7777 requires to run it correctly:
         "logs:PutRetentionPolicy",
         "ec2:CreateSecurityGroup",
         "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
         "ec2:createTags",
         "ecs:DescribeClusters",
         "ecs:CreateCluster",
