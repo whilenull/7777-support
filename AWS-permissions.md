@@ -15,6 +15,7 @@ Here are the IAM permissions that 7777 requires to run it correctly:
         "iam:CreateServiceLinkedRole",
         "logs:CreateLogGroup",
         "logs:PutRetentionPolicy",
+        "logs:TagResource",
         "ec2:CreateSecurityGroup",
         "ec2:AuthorizeSecurityGroupEgress",
         "ec2:createTags",
