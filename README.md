@@ -34,7 +34,7 @@ chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
 
-7777 is also available via Brew: `brew install 7777`
+7777 is also available via Brew: `brew install 7777`. **Note:** the Brew publication has been contributed by the community, and may not be updated as frequently as the other distribution methods.
 
 If you have any macOS permission issues (the binary isn't approved by Apple), you can whitelist it manually in system preferences or via the CLI:
 
