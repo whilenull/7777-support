@@ -214,3 +214,11 @@ One workaround is to run `7777 uninstall` and `7777` again.
 This error can happen for applications that use the default VPC provided in the region. Those default VPCs are unfortunately not explicitely associated with the Route Table.
 
 Not sure what that means or what to do? Please have a look [at this answer](https://github.com/whilenull/7777-support/issues/5#issuecomment-733593007), it should help. Get in touch if you have any issue.
+
+> The tunnel has been closed
+
+If the container bastion (running in ECS Fargate) crashed for some reason, you can check out its logs in CloudWatch:
+
+- Open CloudWatch
+- Go in "Log Groups"
+- Search for "7777"
