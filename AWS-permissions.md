@@ -24,6 +24,7 @@ Here are the IAM permissions that 7777 requires to run it correctly:
         "ecs:CreateCluster",
         "ecs:RegisterTaskDefinition",
         "ecs:DeregisterTaskDefinition",
+        "ecs:TagResource",
         "cloudformation:GetTemplate",
         "cloudformation:CreateChangeSet",
         "cloudformation:DescribeChangeSet",
