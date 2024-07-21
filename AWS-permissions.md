@@ -13,6 +13,7 @@ Here are the IAM permissions that 7777 requires to run it correctly:
         "iam:CreateRole",
         "iam:AttachRolePolicy",
         "iam:CreateServiceLinkedRole",
+        "iam:TagRole",
         "logs:CreateLogGroup",
         "logs:PutRetentionPolicy",
         "logs:TagResource",
