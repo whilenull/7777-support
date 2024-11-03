@@ -45,6 +45,8 @@ spctl --add /usr/local/bin/7777
 spctl --remove /usr/local/bin/7777
 ```
 
+*Note: if you download the binary via a web browser instead of `curl`, macOS 15 [will flag the file as unsafe](https://github.com/whilenull/7777-support/issues/65#issuecomment-2453433938) and the `spctl` command will fail. To solve that, run `xattr -d com.apple.quarantine 7777`. If you download the binary via `curl` (as shown in the docs above) then you shouldn't face this problem.*
+
 ### Windows
 
 Download the Windows 10 binary directly from https://releases.port7777.com/latest/windows/7777.exe or via the command line:
