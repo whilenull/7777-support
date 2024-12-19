@@ -69,6 +69,12 @@ Replace `YOUR_LICENSE` with the license sent to you after your purchase on [port
 
 If you prefer, you can also set your license in a `PORT_7777_LICENSE` environment variable.
 
+### Solo license
+
+The "Solo edition" license requires you to approve the computer every time 7777 runs on a new machine. For most people, that means you approve your computer once and 7777 will work fine. If you change computer, you'll approve the new computer once and be done with it.
+
+Computer validation is done via the [MAC address](https://en.wikipedia.org/wiki/MAC_address). Some advanced setups might impact how the MAC address is detected, for example if you run 7777 in a VM or similar. Be also aware of [this new macOS privacy feature](https://support.apple.com/en-au/102509) that will change the MAC address when joining a new WiFi network (causing 7777 to ask you to validate the computer once again).
+
 ## AWS access keys
 
 To connect to a database in your AWS account, 7777 requires AWS permissions.
