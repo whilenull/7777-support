@@ -29,12 +29,14 @@ A Linux Alpine version is available under the https://releases.port7777.com/late
 Download and install the MacOS binary in `/usr/local/bin`:
 
 ```bash
-curl -o 7777 https://releases.port7777.com/latest/macos/7777
+curl -o 7777 https://releases.port7777.com/latest/macos/7777-arm64
 chmod +x 7777
 sudo mv 7777 /usr/local/bin
 ```
 
-7777 is also available via Brew: `brew install 7777`. **Note:** the Brew publication has been contributed by the community, and may not be updated as frequently as the other distribution methods.
+The instructions above are for Mac M1 and above (ARM processors). If you have an intel processor, download from `https://releases.port7777.com/latest/macos/7777-x64` instead.
+
+Note: 7777 is also available via Brew (`brew install 7777`) **BUT** the Brew publication has been contributed by the community, and is not updated as frequently as the other distribution methods. It also doesn't support M1 at the moment. We would recommend against using it.
 
 If you have any macOS permission issues (the binary isn't approved by Apple), you can whitelist it manually in system preferences or via the CLI:
 
